@@ -1,0 +1,72 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: 50px 100px;
+    border: 2px solid #f7f6f6;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+
+    &--normal {
+        color: $color-highlight;
+    }
+
+    &--elevated {
+        color: #1b66cf;
+    }
+
+    &--hyp1 {
+        color: #eb8813;
+    }
+
+    &--hyp2 {
+        color: #dce73a;
+    }
+
+    &--episode {
+        color: #d9534f;
+    }
+
+    &__icon {
+        font-size: 6rem;
+        display: block !important;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        &--normal {
+            color: $color-highlight;
+        }
+
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: initial;
+    }
+
+    &__read-more {
+        text-decoration: underline;
+    }
+
+    &__close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: $color-primary;
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+
+    &__display {
+        display: block!important;
+    }
+
+}
+

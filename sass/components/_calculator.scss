@@ -1,0 +1,53 @@
+.calculator {
+    background-color: #f7f6f6;
+    border: 10px solid $color-light;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2.5rem 3rem;
+        font-size: 5rem;
+        color: $color-primary;
+       
+        &--running {
+            animation: pulse .7s ease-in 1;
+        }
+
+
+    }
+
+    &__input {
+        background-color: $color-light;
+        height: 5.2rem;
+        width: 12rem;
+        border: 3px solid rgb(169,169,169);
+        border-radius: 5px;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: $font-family-secondary;
+        text-align: center;
+
+        &::placeholder {
+            // color: red;
+            font-family: $font-family-secondary;
+            font-size: 2rem;
+            font-weight: 700;
+            
+        }
+
+    }
+
+
+}
+
+
+// Remove number spinners from input fields
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

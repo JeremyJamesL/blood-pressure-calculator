@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Average</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+
+<!-- Modals -->
+<div class="modals">
+
+    <div class="modal modal--normal">
+        <i class="modal__icon modal__icon--normal las la-check-circle"></i>
+        <h2 class="modal__heading modal__heading--normal">Normal</h2>
+        <p class="modal__text">Your blood pressure is within the normal range</p>
+        <i class="las la-times-circle modal__close"></i>
+    </div>
+
+    <div class="modal modal--elevated">
+        <i class="modal__icon modal__icon--elevated las la-arrow-circle-up"></i>
+        <h2 class="modal__heading modal__heading--elevated">Elevated</h2>
+        <p class="modal__text">Your blood pressure is elevated</p>
+        <i class="las la-times-circle modal__close"></i>
+    </div>
+
+    <div class="modal modal--hyp1">
+        <i class="modal__icon modal__icon--hyp1 las la-meh"></i>
+        <h2 class="modal__heading modal__heading--hyp1">Hypertension 1</h2>
+        <p class="modal__text">Your blood pressure is within the hypertension 1 range</p>
+        <i class="las la-times-circle modal__close"></i>
+    </div>
+
+    <div class="modal modal--hyp2">
+        <i class="modal__icon modal__icon--hyp2 las la-meh"></i>
+        <h2 class="modal__heading modal__heading--hyp2">Hypertension 2</h2>
+        <p class="modal__text">Your blood pressure is within the hypertension 2 range</p>
+        <i class="las la-times-circle modal__close"></i>
+    </div>
+
+    <div class="modal modal--episode">
+        <i class="modal__icon modal__icon--episode las la-exclamation-triangle"></i></i>
+        <h2 class="modal__heading modal__heading--episode">See a doctor immediately</h2>
+        <p class="modal__text">Your blood pressure is within a dangerous range</p>
+        <i class="las la-times-circle modal__close"></i>
+    </div>
+
+</div>
+<!-- /modals -->
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-2-of-3">
+
+                    <h1 class="header__heading mb-5">Blood Pressure Calculator</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic autem minus, obcaecati dicta adipisci id totam tempore quae voluptatum ex, fugiat dolorum molestiae provident, ipsum nihil delectus laborum possimus! Corrupti!</p>
+                    <a href="#" class="btn btn--default btn--hoverup header__btn mr-2">Start Now<div class="btn__slider"></div></a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <a href="#" class="btn btn--default btn--hoverup header__btn">Learn More<div class="btn__slider"></div></a>
+                    <!-- </div> -->
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="row calculator">
+
+        
+            <i class="las la-heartbeat calculator__icon"></i>
+
+            <h2 class="heading heading--secondary mb-2">Calculate your blood pressure</h2>
+
+            <!-- Input fields -->
+            <div class="add-container mb-2">
+                <input type="number" placeholder="120" class="calculator__input calculator__input--bp sys-input" min="1" max="999"> / 
+                <input type="number" placeholder="80" class="calculator__input calculator__input--bp dys-input" min="1" max="999">
+            </div>
+
+            <div class="submit-container mb-5">
+                <button class="submit calculator__submit btn btn--positive btn--hoverright">Add this reading<i class="las la-plus-circle"></i></button>
+            </div>
+
+            <div class="results">
+
+                <div class="row mb-2">
+                    <h2 class="heading heading--secondary">Results</h2>
+                </div>
+
+                <div class="row mb-5 clearfix">
+
+                    <div class="col-1-of-2">
+
+                        <!-- Systolic -->
+                        <div class="systolic-container">
+
+                            <h3 class="heading heading--tertiary mb-2">Systolic Readings:</h2>          
+
+                                <!-- Systolic list -->
+                                <ul class="systolic-list readings-list mb-5">
+                                    <!-- <li class="systolic-reading" id="sys-%id%">%value% mm/hg</li> -->
+                                </ul>
+                                <!-- /end systolic list-->
+
+                            <h3 class="heading heading--tertiary mb-2">Systolic Average:</h2>    
+                            <div class="systolic-avg"></div>
+
+                        </div>
+                        <!-- /Systolic -->
+                        
+                    </div>    
+                
+                        
+                    <div class="col-1-of-2">
+
+                        <!-- Diastolic -->
+                        <div class="diastolic-container">
+
+                            <h3 class="mb-2 heading heading--tertiary">Diastolic Readings:</h2>          
+                
+                                <!-- Diastolic list -->
+                                <ul class="diastolic-list readings-list mb-5">
+                                    <!-- <li class="diastolic-reading" id="sys-%id%">%value% mm/hg</li> -->
+                                </ul>
+                                <!-- /end Diastolic list-->
+
+                                <h3 class="heading heading--tertiary mb-2">Diastolic Average:</h2>    
+                                <div class="diastolic-avg"></div>
+                
+                            </div>
+                            <!-- /Diastolic -->
+                    </div>        
+
+                </div>    
+
+                <div class="row clearfix mb-2">
+                    <button class="calcresults btn btn--positive btn--hoverright results__submit-btn">Calculate results<i class="las la-sign-in-alt"></i></button>
+                    <button class="clearall btn btn--alert btn--hoverright results__clear-btn">Clear all fields<i class="las la-times-circle"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
