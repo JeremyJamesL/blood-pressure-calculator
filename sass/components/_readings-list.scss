@@ -1,6 +1,13 @@
 .readings-list {
     list-style: none;
-    // border-bottom: 1px solid black;
+    
+    &:hover {
+        .readings-list__clear-btn {
+            opacity: 1;
+            pointer-events: initial;
+            cursor: pointer;
+        }
+    }
 
     &__item {
         padding: 2rem 0px 1rem 0px;
@@ -34,6 +41,13 @@
             // font-weight: bold;
         }
 
+    }
+
+    &__clear-btn {
+        color: $color-primary;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .2s;
     }
 
 }

@@ -2,6 +2,10 @@
   margin-bottom: 2rem !important;
 }
 
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+
 .mb-5 {
   margin-bottom: 5rem !important;
 }
@@ -14,36 +18,33 @@
   margin-right: 5rem !important;
 }
 
+.pl-2 {
+  padding-left: 2rem !important;
+}
+
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 html {
   font-size: 62.5%;
 }
@@ -66,7 +67,6 @@ main {
 p {
   font-size: 1.8rem;
 }
-
 p:not(:last-child) {
   margin-bottom: 2.5rem;
 }
@@ -95,47 +95,38 @@ button {
   max-width: 100rem;
   margin: 0 auto;
 }
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.row [class^="col-"] {
+.row [class^=col-] {
   float: left;
 }
-
-.row [class^="col-"]:not(:last-child) {
+.row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
-
 .row .col-1-of-2 {
   width: calc((100% - 6rem ) / 2);
 }
-
 .row .col-1-of-3 {
   width: calc((100% - 2 * 6rem) /3);
 }
-
 .row .col-2-of-3 {
   width: calc( 2 *((100% - 2 * 6rem) / 3) + 6rem);
 }
 
 .header {
   background: url("/images/iron-grip.png"), rgba(207, 15, 35, 0.9);
-  height: 40vh;
   color: #fff;
   padding: 6rem 0;
 }
-
 .header__heading {
   position: relative;
   text-transform: uppercase;
   font-size: 4.5rem;
   font-weight: 700;
 }
-
 .header__heading::after {
   content: "";
   position: absolute;
@@ -146,7 +137,6 @@ button {
   border-radius: 15px;
   background-color: #fff;
 }
-
 .header__btn {
   display: inline-block;
 }
@@ -155,7 +145,6 @@ button {
   padding: 2rem;
   background-color: #fff;
 }
-
 .results__clear-btn {
   float: right;
 }
@@ -167,58 +156,45 @@ button {
   top: 50%;
   padding: 50px 100px;
   border: 2px solid #f7f6f6;
-  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background-color: #fff;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
 }
-
 .modal--normal {
   color: #588b8b;
 }
-
 .modal--elevated {
   color: #1b66cf;
 }
-
 .modal--hyp1 {
   color: #eb8813;
 }
-
 .modal--hyp2 {
   color: #dce73a;
 }
-
 .modal--episode {
   color: #d9534f;
 }
-
 .modal__icon {
   font-size: 6rem;
   display: block !important;
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .modal__icon--normal {
   color: #588b8b;
 }
-
 .modal__heading {
   margin-bottom: 2rem;
 }
-
 .modal__text {
   color: initial;
 }
-
 .modal__read-more {
   text-decoration: underline;
 }
-
 .modal__close {
   position: absolute;
   top: 5px;
@@ -227,7 +203,6 @@ button {
   cursor: pointer;
   font-size: 2.5rem;
 }
-
 .modal__display {
   display: block !important;
 }
@@ -239,39 +214,30 @@ button {
   line-height: 1;
   border-radius: 5px;
   position: relative;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
   font-family: "Nunito", sans-serif;
   cursor: pointer;
   font-size: 1.8rem;
 }
-
 .btn i {
   margin-left: 10px;
   font-size: 2.2rem;
   font-weight: 700;
 }
-
 .btn--hoverup:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
-
 .btn--hoverright:hover {
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  transform: translateX(2px);
 }
-
 .btn--default {
   color: #fff;
   border-color: #fff;
 }
-
 .btn--positive {
   color: #588b8b;
   border-color: #588b8b;
 }
-
 .btn--alert {
   color: #ec971f;
   border-color: #ec971f;
@@ -281,11 +247,9 @@ button {
   background-color: #f7f6f6;
   border: 10px solid #fff;
   padding: 2.5rem 3rem;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-
 .calculator__icon {
   position: absolute;
   right: 0;
@@ -294,12 +258,10 @@ button {
   font-size: 5rem;
   color: #cf0f23;
 }
-
 .calculator__icon--running {
-  -webkit-animation: pulse .7s ease-in 1;
-          animation: pulse .7s ease-in 1;
+  -webkit-animation: pulse 0.7s ease-in 1;
+          animation: pulse 0.7s ease-in 1;
 }
-
 .calculator__input {
   background-color: #fff;
   height: 5.2rem;
@@ -311,25 +273,16 @@ button {
   font-family: "Nunito", sans-serif;
   text-align: center;
 }
-
-.calculator__input::-webkit-input-placeholder {
+.calculator__input::-moz-placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
-
 .calculator__input:-ms-input-placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
-
-.calculator__input::-ms-input-placeholder {
-  font-family: "Nunito", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 .calculator__input::placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
@@ -345,12 +298,15 @@ input[type=number]::-webkit-outer-spin-button {
 .readings-list {
   list-style: none;
 }
-
+.readings-list:hover .readings-list__clear-btn {
+  opacity: 1;
+  pointer-events: initial;
+  cursor: pointer;
+}
 .readings-list__item {
   padding: 2rem 0px 1rem 0px;
   border-bottom: 1px solid rgba(211, 211, 211, 0.575);
 }
-
 .readings-list__item-num {
   position: relative;
   font-weight: 700;
@@ -359,7 +315,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 2rem;
   font-size: 1.5rem;
 }
-
 .readings-list__item-num::after {
   content: " ";
   position: absolute;
@@ -369,11 +324,28 @@ input[type=number]::-webkit-outer-spin-button {
   width: 20px;
   border: 2px solid #588b8b;
   border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .readings-list__item-value {
   font-style: italic;
 }
-/*# sourceMappingURL=main.css.map */
+.readings-list__clear-btn {
+  color: #cf0f23;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.disclaimer-modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 50px 100px;
+  border: 2px solid #f7f6f6;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
